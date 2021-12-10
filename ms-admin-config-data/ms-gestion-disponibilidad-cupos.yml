@@ -1,0 +1,32 @@
+application:
+  title: Microservicios de Disponibilidad Cupos
+  version: 1.0.0
+  author: R.PINEDA
+
+server:
+  port: 8093
+#  servlet:
+#    context-path: /ms-disponibilidad-cupos
+    
+# Apache KAFKA #
+custom:
+  kafka:
+    bootstrap-servers: localhost:9092
+    topic-name: topic-cita-medica-solicitud
+    group-id: group-cita-medica-solicitud
+    topic-name-rs: topic-cita-medica-result-solicitud
+    group-id-rs: group-cita-medica-result-solicitud
+    
+    
+# Redis Server
+redis:
+  server: 127.0.0.1
+  port: 6379
+
+    
+# Registry Client
+eureka:
+   client:
+      fetch-registry: true
+      serviceUrl:
+         defaultZone: http://localhost:8889/eureka

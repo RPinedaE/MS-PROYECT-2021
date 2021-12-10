@@ -1,0 +1,23 @@
+application:
+  title: Microservicios Oferta Potencial de Salud
+  version: 1.0.0
+  author: R.PINEDA
+
+server:
+  port: 8094
+#  servlet:
+#    context-path: /ms-gestion-oferta-potencial-salud
+         
+         
+# Redis Server
+redis:
+  server: 127.0.0.1
+  port: 6379
+
+    
+# Registry Client
+eureka:
+   client:
+      fetch-registry: true
+      serviceUrl:
+         defaultZone: http://localhost:8889/eureka

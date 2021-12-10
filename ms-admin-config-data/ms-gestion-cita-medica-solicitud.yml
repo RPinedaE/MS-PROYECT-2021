@@ -1,0 +1,35 @@
+application:
+  title: Microservicios de Cita Medica Solicitud
+  version: 1.0.0
+  author: R.PINEDA
+
+server:
+  port: 8092
+#  servlet:
+#    context-path: /ms-cita-medica-solicitud
+    
+# Apache KAFKA #
+custom:
+  kafka:
+    bootstrap-servers: localhost:9092
+    topic-name: topic-cita-medica-solicitud
+    group-id: group-cita-medica-solicitud
+    topic-name-rs: topic-cita-medica-result-solicitud
+    group-id-rs: group-cita-medica-result-solicitud
+    
+    
+# Oracle #
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@192.168.1.60:1521:xe
+    username: MS_CITA_MEDICA
+    password: 123123
+    driver-class-name: oracle.jdbc.driver.OracleDriver    
+
+    
+# Registry Client
+eureka:
+   client:
+      fetch-registry: true
+      serviceUrl:
+         defaultZone: http://localhost:8889/eureka

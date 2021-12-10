@@ -1,0 +1,24 @@
+application:
+  title: Microservicios de Cita Medica Producer
+  version: 1.0.0
+  author: R.PINEDA
+
+server:
+  port: 8090
+#  servlet:
+#    context-path: /ms-cita-medica-producer
+    
+# Apache KAFKA #
+custom:
+  kafka:
+    bootstrap-servers: localhost:9092
+    topic-name: topic-cita-medica
+    group-id: group-cita-medica
+
+    
+# Registry Client
+eureka:
+   client:
+      fetch-registry: true
+      serviceUrl:
+         defaultZone: http://localhost:8889/eureka

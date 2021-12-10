@@ -1,0 +1,8 @@
+server.port=8081
+server.servlet.context-path=/ms-pacientes
+
+# Oracle #
+spring.datasource.url=jdbc:oracle:thin:@192.168.1.60:1521:xe
+spring.datasource.username=MS_PACIENTES
+spring.datasource.password=123123
+spring.datasource.driver-class-name=oracle.jdbc.driver.OracleDriver

@@ -1,0 +1,26 @@
+application:
+  title: Microservicios de Cita Medica Command
+  version: 1.0.0
+  author: R.PINEDA
+
+server:
+  port: 8089
+#  servlet:
+#    context-path: /ms-cita-medica-command
+    
+# MongoDB #
+spring:
+   data:
+      mongodb:
+         database: MS_CITA_MEDICA_QUERY
+#        username:
+#        password:
+         host: 127.0.0.1
+         port: 27017
+    
+# Registry Client
+eureka:
+   client:
+      fetch-registry: true
+      serviceUrl:
+         defaultZone: http://localhost:8889/eureka

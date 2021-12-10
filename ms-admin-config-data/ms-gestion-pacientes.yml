@@ -1,0 +1,24 @@
+application:
+  title: Microservicios de Pacientes
+  version: 1.0.0
+  author: R.PINEDA
+
+server:
+  port: 8081
+#  servlet:
+#    context-path: /ms-pacientes
+    
+# Oracle #
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@192.168.1.60:1521:xe
+    username: MS_PACIENTES
+    password: 123123
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    
+# Registry Client
+eureka:
+   client:
+      fetch-registry: true
+      serviceUrl:
+         defaultZone: http://localhost:8889/eureka 
