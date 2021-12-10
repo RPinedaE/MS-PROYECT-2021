@@ -1,0 +1,19 @@
+application:
+  title: Microservicios de Servidor de Registro
+  version: 1.0.0
+  author: R.PINEDA
+
+server:
+  port: 8889
+  
+eureka:
+   instance:
+      hostname: localhost
+   server:
+      enableSelfPreservation: false
+      wait-time-in-ms-when-sync-empty: 0
+   client:
+        register-with-eureka: false
+        fetch-registry: false
+        serviceUrl:
+           defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka

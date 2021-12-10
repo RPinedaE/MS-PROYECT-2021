@@ -1,0 +1,32 @@
+Negocio:
+---------------------------------------------
+1.-  ms-gestion-pacientes		        8081
+2.-  ms-gestion-medicos			 	    8082
+3.-  ms-gestion-especialidades 	 	    8083
+4.-  ms-gestion-programacion-cupos      8084
+5.-  ms-gestion-planilla                8085
+6.-  ms-gestion-prov-externo            8086
+7.-  ms-gestion-cita-medica             8087
+
+8.-  ms-gestion-cita-medica-query       8088
+9.-  ms-gestion-cita-medica-command     8089
+10.- ms-gestion-cita-medica-producer    8090
+11.- ms-gestion-cita-medica-consumer    8091
+
+12.- ms-gestion-cita-medica-solicitud   8092
+13.- ms-gestion-disponibilidad-cupos    8093
+14.- ms-gestion-oferta-potencial-salud  8094
+---------------------------------------------
+
+Administración:
+---------------------------------------------
+15.- ms-admin-registry-server		 	8889
+16.- ms-admin-config-server		     	8888
+17.- ms-admin-api-gateway			 	8887
+---------------------------------------------
+
+Topics Apache Kafka:
+---------------------------------------------
+* topic-cita-medica                  	SQRS
+* topic-cita-medica-solicitud           SAGA
+* topic-cita-medica-result-solicitud    SAGA

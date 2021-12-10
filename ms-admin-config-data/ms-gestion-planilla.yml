@@ -1,0 +1,24 @@
+application:
+  title: Microservicios de Planilla 
+  version: 1.0.0
+  author: R.PINEDA
+
+server:
+  port: 8085
+#  servlet:
+#    context-path: /ms-planilla
+    
+# Postgres #
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/MS_PLANILLA
+    username: postgres
+    password: 123
+    driver-class-name: org.postgresql.Driver
+    
+# Registry Client
+eureka:
+   client:
+      fetch-registry: true
+      serviceUrl:
+         defaultZone: http://localhost:8889/eureka 
